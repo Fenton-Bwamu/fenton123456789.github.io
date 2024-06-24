@@ -1,0 +1,205 @@
+/* Reset and basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #222;
+    color: #eee;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+
+.logo {
+    font-size: 2em;
+    color: #d6cdcd;
+}
+
+.nav-links a {
+    color: #ddd;
+    text-decoration: none;
+    margin: 0 16px;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #f5bd07;
+}
+
+.nav-links button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #850885;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-links button:hover {
+    background-color: #f5bd07;
+    color: #222;
+}
+
+.hero-content {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    color: #f5bd07;
+    margin-bottom: 20px;
+}
+
+.hero-content h2 {
+    font-size: 1.5em;
+    color: #ddd;
+    margin-bottom: 20px;
+}
+
+.hero-content button {
+    padding: 12px 24px;
+    background-color: #850885;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.hero-content button:hover {
+    background-color: #f5bd07;
+    color: #222;
+}
+
+.search {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.search input[type="search"],
+.search button {
+    padding: 10px;
+    border: none;
+    border-radius: 9999px;
+    margin: 5px;
+    font-size: 16px;
+}
+
+.destination, .video, .holiday-cards {
+    width: 80%;
+    margin: auto;
+    color: #ccc;
+    margin-top: 50px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.column {
+    flex: 30%;
+    padding: 0 4px;
+}
+
+.column > img {
+    width: 100%;
+    margin-top: 8px;
+    border-radius: 8px;
+}
+
+.video-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+video {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 8px;
+}
+
+.holiday-cards {
+    text-align: center;
+    margin-top: 50px;
+    color: #eee;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.card {
+    background-color: #333;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 30%;
+    color: #eee;
+    margin: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card > img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.card-content {
+    padding: 16px;
+    text-align: center;
+}
+
+.card-content h2 {
+    margin: 0 0 8px;
+    font-size: 1.5em;
+    color: #f5bd07;
+}
+
+.card-content p {
+    margin: 8px 0;
+    font-size: 18px;
+}
+
+.card-content button {
+    margin: 8px 0;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    color: white;
+    background-color: #850885;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.card-content button:hover {
+    background-color: #f5bd07;
+    color: #222;
+}
