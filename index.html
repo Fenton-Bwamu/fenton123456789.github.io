@@ -26,8 +26,8 @@
 </section>
 
 <section class="search">
-    <input type="search" placeholder="Search places to go">
-    <button>Search Place</button>
+    <input type="search" id="searchInput" placeholder="Search places to go">
+    <button id="searchButton">Search Place</button>
 </section>
 
 <section class="destination">
@@ -54,10 +54,15 @@
     <div class="container">
         <h1>Travel Videos</h1>
         <div class="video-container">
-            <video controls autoplay>
-                <source src="https://videos.pexels.com/video-files/6540388/6540388-uhd_2560_1440_24fps.mp4!" type="video/mp4">
+            <video id="videoPlayer" controls autoplay>
+                <source src="https://videos.pexels.com/video-files/6540381/6540381-uhd_2560_1440_24fps.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
+        </div>
+        <div id="videoControls" class="video-controls">
+            <button id="playPauseBtn" class="control-btn">Play/Pause</button>
+            <input id="volumeRange" class="control-range" type="range" min="0" max="1" step="0.01" value="1">
+            <button id="muteBtn" class="control-btn">Mute</button>
         </div>
     </div>
 </section>
@@ -71,7 +76,7 @@
                 <div class="card-content">
                     <h2>Maasai Mara</h2>
                     <p>$1650</p>
-                    <button>Book now</button>
+                    <button class="book-btn">Book now</button>
                 </div>
             </div>
             <div class="card">
@@ -79,7 +84,7 @@
                 <div class="card-content">
                     <h2>Mount Everest</h2>
                     <p>$1780</p>
-                    <button>Book now</button>
+                    <button class="book-btn">Book now</button>
                 </div>
             </div>
             <div class="card">
@@ -87,12 +92,72 @@
                 <div class="card-content">
                     <h2>Amboseli, Kenya</h2>
                     <p>$1230</p>
-                    <button>Book now</button>
+                    <button class="book-btn">Book now</button>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+<script>
+    // Video Player Controls
+    const videoPlayer = document.getElementById('videoPlayer');
+    const playPauseBtn = document.getElementById('playPauseBtn');
+    const muteBtn = document.getElementById('muteBtn');
+    const volumeRange = document.getElementById('volumeRange');
+
+    // Play/Pause Button Click Handler
+    playPauseBtn.addEventListener('click', () => {
+        if (videoPlayer.paused || videoPlayer.ended) {
+            videoPlayer.play();
+            playPauseBtn.textContent = 'Pause';
+        } else {
+            videoPlayer.pause();
+            playPauseBtn.textContent = 'Play';
+        }
+    });
+
+    // Mute/Unmute Button Click Handler
+    muteBtn.addEventListener('click', () => {
+        if (videoPlayer.muted) {
+            videoPlayer.muted = false;
+            muteBtn.textContent = 'Mute';
+        } else {
+            videoPlayer.muted = true;
+            muteBtn.textContent = 'Unmute';
+        }
+    });
+
+    // Volume Range Change Handler
+    volumeRange.addEventListener('input', () => {
+        videoPlayer.volume = volumeRange.value;
+    });
+
+    // Search Button Click Handler (Just an example, adjust functionality as needed)
+    const searchButton = document.getElementById('searchButton');
+    const searchInput = document.getElementById('searchInput');
+
+    searchButton.addEventListener('click', () => {
+        const searchQuery = searchInput.value.trim().toLowerCase();
+        if (searchQuery) {
+            alert(`Searching for: ${searchQuery}`);
+            // Perform search-related actions here
+        } else {
+            alert('Please enter a search query.');
+        }
+    });
+
+    // Book Now Button Click Handlers (Just an example, adjust functionality as needed)
+    const bookButtons = document.querySelectorAll('.book-btn');
+
+    bookButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const destination = button.parentElement.querySelector('h2').textContent;
+            alert(`Booking now for: ${destination}`);
+            // Implement booking logic here
+        });
+    });
+</script>
 
 </body>
 </html>
