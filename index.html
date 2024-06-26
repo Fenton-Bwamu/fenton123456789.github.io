@@ -15,7 +15,7 @@
         <a href="./about.html">ABOUT</a>
         <a href="#">SERVICES</a>
         <a href="#">CONTACT US</a>
-        <button>SIGN UP</button>
+        <a href="#" class="signup-btn">SIGN UP</a>
     </nav>
 </header>
 
@@ -35,16 +35,16 @@
         <h1>Top Destinations</h1>
         <div class="row">
             <div class="column">
-                <img src="https://images.pexels.com/photos/4426228/pexels-photo-4426228.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Pexels">
-                <img src="https://images.pexels.com/photos/6243251/pexels-photo-6243251.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Pexels">
+                <img src="https://images.pexels.com/photos/2740956/pexels-photo-2740956.jpeg" alt="Destination Image 1">
+                <img src="https://images.pexels.com/photos/3912981/pexels-photo-3912981.jpeg" alt="Destination Image 2">
             </div>
             <div class="column">
-                <img src="https://as1.ftcdn.net/v2/jpg/03/40/14/62/1000_F_340146250_7RlxLDd7Lhdrn1Wz6A5xmpLvD8CgiKKg.jpg" alt="The Plaza Hotel">
-                <img src="https://images.pexels.com/photos/3756166/pexels-photo-3756166.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Pexels">
+                <img src="https://images.pexels.com/photos/840996/pexels-photo-840996.jpeg" alt="The Plaza Hotel">
+                <img src="https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg" alt="Destination Image 3">
             </div>
             <div class="column">
-                <img src="https://images.pexels.com/photos/18369292/pexels-photo-18369292/free-photo-of-a-mercedes-benz-s-class.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Pexels">
-                <img src="https://images.pexels.com/photos/4906410/pexels-photo-4906410.jpeg" alt="Pexels">
+                <img src="https://images.pexels.com/photos/3862632/pexels-photo-3862632.jpeg" alt="Destination Image 4">
+                <img src="https://images.pexels.com/photos/3183135/pexels-photo-3183135.jpeg" alt="Destination Image 5">
             </div>
         </div>
     </div>
@@ -55,7 +55,7 @@
         <h1>Travel Videos</h1>
         <div class="video-container">
             <video id="videoPlayer" controls autoplay>
-                <source src="https://videos.pexels.com/video-files/6540381/6540381-uhd_2560_1440_24fps.mp4" type="video/mp4">
+                <source src="https://videos.pexels.com/video-files/5377684/5377684-uhd_2560_1440_25fps.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
@@ -72,25 +72,26 @@
         <h1>Holiday Destinations</h1>
         <div class="cards-container">
             <div class="card">
-                <img src="https://images.pexels.com/photos/11679893/pexels-photo-11679893.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Pexels">
+                <img src="https://images.pexels.com/photos/6324172/pexels-photo-6324172.jpeg" alt="Holiday Destination 1">
                 <div class="card-content">
-                    <h2>Maasai Mara</h2>
+                    <h2>Tech camping</h2>
                     <p>$1650</p>
                     <button class="book-btn">Book now</button>
                 </div>
             </div>
             <div class="card">
-                <img src="https://images.pexels.com/photos/5202009/pexels-photo-5202009.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Pexels">
+                <img src="https://images.pexels.com/photos/7241662/pexels-photo-7241662.jpeg" alt="Holiday Destination 2">
                 <div class="card-content">
-                    <h2>Mount Everest</h2>
+                    <h2>Tech games</h2>
                     <p>$1780</p>
                     <button class="book-btn">Book now</button>
                 </div>
             </div>
+            
             <div class="card">
-                <img src="https://images.pexels.com/photos/20467460/pexels-photo-20467460/free-photo-of-wildebeest-walking-through-water-in-amboseli-national-park.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Pexels">
+                <img src="https://images.pexels.com/photos/26568789/pexels-photo-26568789.jpeg" alt="Holiday Destination 3">
                 <div class="card-content">
-                    <h2>Amboseli, Kenya</h2>
+                    <h2>Desert explore</h2>
                     <p>$1230</p>
                     <button class="book-btn">Book now</button>
                 </div>
@@ -133,7 +134,7 @@
         videoPlayer.volume = volumeRange.value;
     });
 
-    // Search Button Click Handler (Just an example, adjust functionality as needed)
+    // Search Button Click Handler
     const searchButton = document.getElementById('searchButton');
     const searchInput = document.getElementById('searchInput');
 
@@ -141,20 +142,18 @@
         const searchQuery = searchInput.value.trim().toLowerCase();
         if (searchQuery) {
             alert(`Searching for: ${searchQuery}`);
-            // Perform search-related actions here
         } else {
             alert('Please enter a search query.');
         }
     });
 
-    // Book Now Button Click Handlers (Just an example, adjust functionality as needed)
+    // Book Now Button Click Handlers
     const bookButtons = document.querySelectorAll('.book-btn');
 
     bookButtons.forEach(button => {
         button.addEventListener('click', () => {
             const destination = button.parentElement.querySelector('h2').textContent;
             alert(`Booking now for: ${destination}`);
-            // Implement booking logic here
         });
     });
 </script>

@@ -7,7 +7,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #050e31;
     padding: 20px;
 }
 
@@ -35,7 +35,7 @@ nav a {
 
 nav button {
     padding: 10px 20px;
-    background-color: #850885;
+    background-color: #d32020;
     border: none;
     color: white;
     cursor: pointer;
@@ -44,7 +44,7 @@ nav button {
 main {
     width: 80%;
     margin: auto;
-    color: #333;
+    color: rgb(228, 218, 218);
     margin-top: 20px;
 }
 
@@ -53,7 +53,7 @@ section {
 }
 
 h2 {
-    color: #333;
+    color: #88ca1f;
     font-size: 2em;
     margin-bottom: 10px;
     text-align: center; /* Center align headings */
@@ -127,4 +127,105 @@ a {
 
 a:hover {
     color: #333;
+}
+
+.mission{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    margin-top: 4rem;
+    color: white;
+}
+
+.reject{
+    background-color: #0228bd ;
+    width: 25%;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+
+
+
+}
+
+.video-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+video {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 8px;
+}
+
+.holiday-cards {
+    text-align: center;
+    margin-top: 50px;
+    color: #eee;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.card {
+    background-color: #333;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 30%;
+    color: #eee;
+    margin: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card > img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.card-content {
+    padding: 16px;
+    text-align: center;
+}
+
+.card-content h2 {
+    margin: 0 0 8px;
+    font-size: 1.5em;
+    color: #f5bd07;
+}
+
+.card-content p {
+    margin: 8px 0;
+    font-size: 18px;
+    text-align: center;
+}
+
+.card-content button {
+    margin: 8px 0;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    color: white;
+    background-color: #850885;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.card-content button:hover {
+    background-color: #f5bd07;
+    color: #222;
 }

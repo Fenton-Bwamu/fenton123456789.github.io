@@ -38,7 +38,7 @@ header {
     color: #f5bd07;
 }
 
-.nav-links button {
+.nav-links .signup-btn {
     padding: 10px 20px;
     border: none;
     background-color: #850885;
@@ -46,9 +46,11 @@ header {
     cursor: pointer;
     font-size: 16px;
     transition: background-color 0.3s ease, color 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
 }
 
-.nav-links button:hover {
+.nav-links .signup-btn:hover {
     background-color: #f5bd07;
     color: #222;
 }
