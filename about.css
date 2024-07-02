@@ -139,7 +139,7 @@ a:hover {
 }
 
 .reject{
-    background-color: #0228bd ;
+    background-color: #002f9c ;
     width: 25%;
     padding: 15px;
     border-radius: 15px;
@@ -173,7 +173,7 @@ video {
 }
 
 .card {
-    background-color: #333;
+    background-color: #000000;
     border-radius: 8px;
     overflow: hidden;
     width: 30%;
@@ -228,4 +228,21 @@ video {
 .card-content button:hover {
     background-color: #f5bd07;
     color: #222;
+}
+
+ /* footer style */
+ footer{
+    text-align: justify;
+background-color: #000000;
+color: #d8faff;
+padding: 10px 0;
+position: fixed;
+bottom: 0;
+width: 100%;
+}
+
+footer p {
+margin: 10px;
+align-items: center;
+
 }

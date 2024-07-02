@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Destinations</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="footer.css">
 </head>
 <body>
 
@@ -100,63 +101,33 @@
     </div>
 </section>
 
-<script>
-    // Video Player Controls
-    const videoPlayer = document.getElementById('videoPlayer');
-    const playPauseBtn = document.getElementById('playPauseBtn');
-    const muteBtn = document.getElementById('muteBtn');
-    const volumeRange = document.getElementById('volumeRange');
 
-    // Play/Pause Button Click Handler
-    playPauseBtn.addEventListener('click', () => {
-        if (videoPlayer.paused || videoPlayer.ended) {
-            videoPlayer.play();
-            playPauseBtn.textContent = 'Pause';
-        } else {
-            videoPlayer.pause();
-            playPauseBtn.textContent = 'Play';
-        }
-    });
+<footer>
+    <hr>
+    <section class="footer-section">
+      <div class="footer-1">
+        <h1>NIKE</h1>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <span></span>
+      </div>
 
-    // Mute/Unmute Button Click Handler
-    muteBtn.addEventListener('click', () => {
-        if (videoPlayer.muted) {
-            videoPlayer.muted = false;
-            muteBtn.textContent = 'Mute';
-        } else {
-            videoPlayer.muted = true;
-            muteBtn.textContent = 'Unmute';
-        }
-    });
+      <div class="footer-1">
+        <p>Home</p>
+        <p>Services</p>
+        <p>Download now</p>
+      </div>
 
-    // Volume Range Change Handler
-    volumeRange.addEventListener('input', () => {
-        videoPlayer.volume = volumeRange.value;
-    });
+      <div class="footer-1">
+        <p>Contact now</p>
+        <p>Connect</p>
+        <p>Starter pack</p>
+      </div>
 
-    // Search Button Click Handler
-    const searchButton = document.getElementById('searchButton');
-    const searchInput = document.getElementById('searchInput');
-
-    searchButton.addEventListener('click', () => {
-        const searchQuery = searchInput.value.trim().toLowerCase();
-        if (searchQuery) {
-            alert(`Searching for: ${searchQuery}`);
-        } else {
-            alert('Please enter a search query.');
-        }
-    });
-
-    // Book Now Button Click Handlers
-    const bookButtons = document.querySelectorAll('.book-btn');
-
-    bookButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            const destination = button.parentElement.querySelector('h2').textContent;
-            alert(`Booking now for: ${destination}`);
-        });
-    });
-</script>
+    </section>
+    <section>
+      <h1>All rights rederved</h1>
+    </section>
+  </footer>
 
 </body>
 </html>

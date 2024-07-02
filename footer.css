@@ -1,0 +1,15 @@
+footer{
+    width: 80%;
+    color: rgb(235, 0, 0);
+    margin: auto;
+    margin-top: 3rem;
+    border: none;
+
+
+
+}
+.footer-section{
+    display: flex;
+    justify-content: space-between;
+
+}
