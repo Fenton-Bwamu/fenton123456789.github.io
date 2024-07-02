@@ -229,20 +229,3 @@ video {
     background-color: #f5bd07;
     color: #222;
 }
-
- /* footer style */
- footer{
-    text-align: justify;
-background-color: #000000;
-color: #d8faff;
-padding: 10px 0;
-position: fixed;
-bottom: 0;
-width: 100%;
-}
-
-footer p {
-margin: 10px;
-align-items: center;
-
-}
