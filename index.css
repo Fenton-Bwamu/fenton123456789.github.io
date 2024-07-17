@@ -34,9 +34,10 @@ header {
     transition: color 0.3s ease;
 }
 
-.nav-links a:hover {
-    color: #f5bd07;
-}
+ header nav a:hover,
+  button:hover {
+    color: #2e2c25;
+  }
 
 .nav-links .signup-btn {
     padding: 10px 20px;
@@ -52,7 +53,7 @@ header {
 
 .nav-links .signup-btn:hover {
     background-color: #f5bd07;
-    color: #222;
+    color: #302626;
 }
 
 .hero-content {
@@ -74,7 +75,7 @@ header {
 
 .hero-content button {
     padding: 12px 24px;
-    background-color: #850885;
+    background-color: #b10a0a;
     border: none;
     color: white;
     cursor: pointer;
@@ -83,8 +84,8 @@ header {
 }
 
 .hero-content button:hover {
-    background-color: #f5bd07;
-    color: #222;
+    background-color: #22211c;
+    
 }
 
 .search {
