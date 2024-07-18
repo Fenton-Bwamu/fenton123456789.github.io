@@ -206,3 +206,11 @@ video {
     background-color: #f5bd07;
     color: #222;
 }
+@media (max-width: 768px) {
+    .row, .cards-container {
+        flex-direction: column;
+    }
+    .column, .card {
+        flex: 100%;
+    }
+}
